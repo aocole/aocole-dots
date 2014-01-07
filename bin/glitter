@@ -1,0 +1,11 @@
+#!/home/aocole/.rbenv/shims/ruby
+dirs = Dir["#{ENV['HOME']}/stackato/*/"]
+dirs.each do |dirname|
+  if File.exist?("#{dirname}/.git/")
+    puts "Updating #{dirname.split('/').last}"
+    Dir.chdir dirname
+    dirty = !(`git status` =~ /working directory clean/)
+    puts `#{dirty ? 'git stash && ' : ''}git pull --rebase#{dirty ? ' && git stash pop' : ''}`
+    puts "\n\n"
+  end
+end
