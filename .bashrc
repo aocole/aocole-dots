@@ -112,5 +112,10 @@ fi
 
 PATH="$HOME/node_modules/.bin:$PATH"
 PATH="$HOME/.rbenv/bin:$PATH"
+PATH="$HOME/.git-hub/lib:$PATH"
+MANPATH="$HOME/.git-hub/man:$MANPATH"
+
+alias giggle="giggle 2>/dev/null"
+
 eval "$(rbenv init -)"
 
