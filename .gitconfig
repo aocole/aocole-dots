@@ -54,6 +54,7 @@
         excludesfile = ~/.gitignore_global
         # some systems set $LESS, which causes git to refuse to override.
         pager = less -FRX
+    editor = vim
 
 [merge]
         tool = meld
