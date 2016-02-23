@@ -98,10 +98,6 @@ if [[ -n "$PS1" ]]; then
 	    . /etc/bash_completion
 	fi
 
-	if [ -f $(brew --prefix)/etc/bash_completion ]; then
-		. $(brew --prefix)/etc/bash_completion
-	fi
-
 	PATH=$PATH:~/bin
 	
 	function parse_git_dirty {
