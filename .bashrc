@@ -99,7 +99,7 @@ if [[ -n "$PS1" ]]; then
 	fi
 
 	PATH=$PATH:~/bin
-	
+
 	function parse_git_dirty {
 	  [[ $(git status 2> /dev/null | tail -n1) =~ "nothing to commit" ]] || echo "*"
 	}
@@ -118,4 +118,5 @@ MANPATH="$HOME/.git-hub/man:$MANPATH"
 alias giggle="giggle 2>/dev/null"
 
 eval "$(rbenv init -)"
+source ~/.git-hub/init
 
