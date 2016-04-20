@@ -1,3 +1,1 @@
-PATH="$HOME/.git-hub/lib:$PATH"
-MANPATH="$HOME/.git-hub/man:$MANPATH"
 source $HOME/.git-hub/.rc
