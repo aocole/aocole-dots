@@ -110,10 +110,8 @@ if [[ -n "$PS1" ]]; then
 
 fi
 
-PATH="$HOME/node_modules/.bin:$PATH"
-PATH="$HOME/.rbenv/bin:$PATH"
-
-alias giggle="giggle 2>/dev/null"
-
-eval "$(rbenv init -)"
+if [ -f $HOME/.rbenv/bin/rbenv ]; then
+    PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
 
