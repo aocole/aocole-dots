@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule ".git-hub"]
-	path = .git-hub
-	url = https://github.com/ingydotnet/git-hub.git
 [submodule ".vim/bundle/godoctor.vim"]
 	path = .vim/bundle/godoctor.vim
 	url = https://github.com/godoctor/godoctor.vim
