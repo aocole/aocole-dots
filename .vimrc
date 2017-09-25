@@ -14,3 +14,4 @@ if &diff
   highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
   highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
 endif
+let g:airline_theme='base16_google'
