@@ -54,7 +54,7 @@
         excludesfile = ~/.gitignore_global
         # some systems set $LESS, which causes git to refuse to override.
         pager = less -FRX
-    editor = vim
+        editor = vim
 
 [merge]
         tool = vimdiff
@@ -62,13 +62,9 @@
         tool = vimdiff
 [difftool]
         prompt = false
+[difftool "vimdiff"]
+        cmd = vim -f -d -c 'wincmd l' -c 'cd "$GIT_PREFIX"' "$LOCAL" "$REMOTE"
 [advice]
         statusHints = false
 [interactive]
         singlekey = true
-[giggle]
-	main-window-maximized = false
-	main-window-geometry = 1299x898+110+525
-	history-view-vpane-position = 556
-	file-view-vpane-position = 560
-	main-window-view = HistoryView
