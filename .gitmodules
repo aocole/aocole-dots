@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-airline-themes"]
 	path = .vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".git-hub"]
+	path = .git-hub
+	url = git@github.com:ingydotnet/git-hub.git
